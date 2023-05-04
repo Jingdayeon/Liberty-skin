@@ -197,6 +197,7 @@ del, s, strike {
 
 .Liberty .nav-wrapper .navbar .navbar-nav .nav-item {
     margin: 0;
+    font-weight: 700;
 }
 
 .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fa {
