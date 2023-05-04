@@ -1,8 +1,8 @@
 :root {
     --main-color: #F74646; /* 스킨 메인 색입니다. 위키 대표 색을 추천드립니다. */
     --sub-color: #F97A7A; /* 네비바 마우스 호버했을 때 표시되는 색상입니다. 메인 색에서 채도를 약간 뺀 색상을 추천드립니다. */
-    --border-color: #e1e8ed; /* 이 색상부터는 수정 안 하셔도 됩니다. */
-}
+    --border-color: #e1e8ed; /* 테두리 색입니다. 굳이 수정은 안 하셔도 됩니다. */
+} /* ♥ */
 
 /* 태그 수정 */
 * {
@@ -14,17 +14,25 @@ input:hover, button:hover, select:hover {
     transition: 0.3s;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} /* ♥ */
+
 html {
     font-size: 15px;
 }
 
 body {
-    font-size: 0.95rem;
-}
+    font-size: 0.96rem;
+} /* ♥ */
 
 body, h1, h2, h3, h4, h5, h6, b {
-    font-family: 'Noto Sans KR','Noto Sans','Noto Sans CJK KR','Spoqa Han Sans','NanumBarunGothic','Nanum Gothic','KoPub Dotum','Malgun Gothic','맑은 고딕', sans-serif;
-}
+    font-family: 'Pretendard','Malgun Gothic','Apple SD Gothic Neo', sans-serif;
+} /* ♥ */
 
 body {
     margin: 0;
@@ -34,29 +42,33 @@ input[type=password] {
     font-family: sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, b {
+    font-weight: 700;
+} /* ♥ */
+
 h1 {
-    font-size: 2.0rem;
-}
+    font-size: 28.8px;
+} /* ♥ */
 
 h2 {
-    font-size: 1.8rem;
-}
+    font-size: 25.9px;
+} /* ♥ */
 
 h3 {
-    font-size: 1.6rem;
-}
+    font-size: 23px;
+} /* ♥ */
 
 h4 {
-    font-size: 1.5rem;
-}
+    font-size: 20.1px;
+} /* ♥ */
 
 h5 {
-    font-size: 1.3rem;
-}
+    font-size: 17.2px;
+} /* ♥ */
 
 h6 {
-    font-size: 1.1rem;
-}
+    font-size: 14.4px;
+} /* ♥ */
 
 ol, ul, p {
     margin: 0;
@@ -121,7 +133,7 @@ th[rowspan]:after, td[rowspan]:after {
 input[type=search] {
     -webkit-appearance: none; /* iOS 잡다한 css설정 제거 */
     appearance: none;
-}
+} /* ♥ */
 
 textarea {
     width: 100%;
@@ -178,7 +190,10 @@ del, s, strike {
 .Liberty .nav-wrapper .navbar .navbar-brand {
     height: 2.8rem;
     padding: 0;
-}
+    align-items: center;
+    display: flex;
+    font-size: 1.25rem;
+} /* ♥ */
 
 .Liberty .nav-wrapper .navbar .navbar-nav .nav-item {
     margin: 0;
@@ -199,7 +214,7 @@ del, s, strike {
 .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover, .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus {
     background-color: var(--sub-color);
     transition: 0.3s;
-}
+} /* ♥ */
 
 .Liberty .nav-wrapper .navbar .navbar-nav .nav-item .dropdown-menu {
     margin-top: 0;
@@ -243,7 +258,7 @@ del, s, strike {
     border-color: var(--sub-color);
     color: #fff;
     outline: 0;
-}
+} /* ♥ */
 
 .Liberty .nav-wrapper .navbar .form-inline .btn .fa {
     width: 0.9rem;
@@ -267,10 +282,9 @@ del, s, strike {
 
 .Liberty .nav-wrapper .navbar .navbar-login .fa {
     color: #fff;
-    padding: 0.7rem 0;
-    font-size: 1.5rem;
-    line-height: 1.4rem;
-}
+    padding: 0.3rem 0.4rem 0.3rem 0;
+    font-size: 1.4rem;
+} /* ♥ */
 
 .Liberty .nav-wrapper .navbar .navbar-login .login-menu {
     float: left;
@@ -297,9 +311,24 @@ del, s, strike {
 
 .Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu {
     top: 120%;
-    right: -1rem;
+    right: -0.5rem;
     z-index: 1002;
-}
+} /* ♥ */
+
+.login-dropdown-name {
+    padding: 0.2rem 0.8rem 0.2rem 0;
+    text-align: right;
+} /* ♥ */
+
+.login-dropdown-name1 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+} /* ♥ */
+
+.login-dropdown-name2 {
+    font-size: 13px;
+} /* ♥ */
 
 .Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu:before, .Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu:after {
     bottom: 100%;
@@ -314,23 +343,22 @@ del, s, strike {
     border-bottom-color: var(--border-color);
     border-width: 0.8rem;
     left: auto;
-    right: 1.15rem;
-}
+    right: 0.7rem;
+} /* ♥ */
 
 .Liberty .nav-wrapper .navbar .navbar-login .login-dropdown-menu:after {
     border-bottom-color: #fff;
     border-width: 0.78rem;
     left: auto;
-    right: 1.15rem;
-}
+    right: 0.79rem;
+} /* ♥ */
 /* 네비 수정 End */
 
 /* 오른쪽 메뉴 수정 */
 .Liberty .content-wrapper .liberty-sidebar {
     float: right;
     width: 15rem;
-    position: relative;
-}
+} /* ♥ */
 
 .Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed {
     position: fixed;
@@ -430,19 +458,19 @@ del, s, strike {
     padding: 0.4rem;
     font-size: 0.8rem;
     font-weight: 400;
-}
+} /* ♥ */
 
 .Liberty .content-wrapper .liberty-sidebar .liberty-right-fixed .live-recent .live-recent-footer .label:hover {
     background-color: var(--sub-color);
     transition: 0.3s;
-}
+} /* ♥ */
 
 .Liberty .content-wrapper .liberty-sidebar .right-ads {
     position: absolute;
     top: 25.73rem;
     width: 15rem;
 }
-/* 오른쪽 메뉴 수정 End */
+    /* 오른쪽 메뉴 수정 End */
 
 /* 컨텐츠 수정 */
 .Liberty .content-wrapper {
@@ -452,7 +480,7 @@ del, s, strike {
 .Liberty .content-wrapper .liberty-content {
     margin-right: 16rem;
     padding: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .Liberty .content-wrapper .liberty-content .liberty-content-header {
@@ -566,6 +594,22 @@ del, s, strike {
     background-color: #eb5e4c;
     display: none;
 }
+
+#topic_color {
+    background-color: #bbeabb;
+} /* ♥ */
+
+#topic_color:hover {
+    background-color: #c5f4c5;
+    color: #373a3c;
+    border-color: #ccc;
+} /* ♥ */
+
+.last-edit {
+    font-size: 0.9rem;
+    text-align: right;
+    padding-top: 3px;
+} /* ♥ */
 /* 컨텐츠 수정 End */
 
 /* 컨텐츠 하단 수정 */
@@ -615,7 +659,7 @@ del, s, strike {
     background-color: var(--main-color);
     color: #fff;
     transition: 0.3s;
-}
+} /* ♥ */
 
 .dropdown-divider {
     border-color: var(--border-color);
@@ -626,11 +670,11 @@ del, s, strike {
 }
 
 .form-control:focus {
-    border-color: #66afe9;
+    border-color: var(--main-color);
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
     transition: 0.3s;
-}
+} /* ♥ */
 
 .btn {
     box-shadow: none;
@@ -657,4 +701,4 @@ caption {
     color: #373a3c;
     caption-side: top;
 }
-/* 부트스트랩 커스텀 End */
+/* 부트스트랩 커스텀 End*/
