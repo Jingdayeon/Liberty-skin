@@ -28,7 +28,7 @@ html {
 
 /* 문단 */
 h1, h2, h3, h4, h5, h6 {
-    margin: 1.2em 0 0.8em;
+    margin: 1.2em 0 0.6em;
     padding-bottom: 7px;
     border-bottom: 1px solid #ccc;
 }
