@@ -193,6 +193,7 @@ del, s, strike {
     align-items: center;
     display: flex;
     font-size: 1.25rem;
+    font-weight: 700;
 } /* ♥ */
 
 .Liberty .nav-wrapper .navbar .navbar-nav .nav-item {
@@ -471,7 +472,7 @@ del, s, strike {
     top: 25.73rem;
     width: 15rem;
 }
-    /* 오른쪽 메뉴 수정 End */
+/* 오른쪽 메뉴 수정 End */
 
 /* 컨텐츠 수정 */
 .Liberty .content-wrapper {
@@ -481,7 +482,7 @@ del, s, strike {
 .Liberty .content-wrapper .liberty-content {
     margin-right: 16rem;
     padding: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .Liberty .content-wrapper .liberty-content .liberty-content-header {

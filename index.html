@@ -54,42 +54,41 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/random"><span class="fa fa-random"></span><span class="hide-title">{{'random'|load_lang}}</span></a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bbs/main"><span class="fa fa-file-text"></span><span class="hide-title">{{'bbs_main'|load_lang}}</span></a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle dropdown-toggle-fix" href="#" data-toggle="dropdown" aria-expanded="false">
                             <span class="fa fa-gear"></span><span class="hide-title">{{'tool'|load_lang}}</span>
                         </a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item" href="/bbs/main"><span class="fa fa-users"></span><span class="hide-title">{{'bbs_main'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/vote"><span class="fa fa-check-square-o"></span><span class="hide-title">{{'vote'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/upload"><span class="fa fa-upload"></span><span class="hide-title">{{'upload'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/other"><span class="fa fa-cogs"></span><span class="hide-title">{{'other_tool'|load_lang}}</span></a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="/admin_list"><span class="fa fa-user-secret"></span><span class="hide-title">{{'admin_list'|load_lang}}</span></a>
-                            <a class="dropdown-item" href="/list/admin/auth_use"><span class="fa fa-outdent"></span><span class="hide-title">{{'authority_use_list'|load_lang}}</span></a>
+                            {% if imp[2][9] != '0' %}
+                                <a class="dropdown-item" href="/manager"><span class="fa fa-sliders"></span><span class="hide-title">{{'admin_tool'|load_lang}}</span></a>
+                            {% endif %}
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dropdown-toggle-fix" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <span class="fa fa-cogs"></span><span class="hide-title">{{'other_tool'|load_lang}}</span>
+                        </a>
+                        <div class="dropdown-menu" role="menu">
                             <a class="dropdown-item" href="/list/document/all"><span class="fa fa-folder-open"></span><span class="hide-title">{{'all_document_list'|load_lang}}</span></a>
+                            <a class="dropdown-item" href="/acl_list"><span class="fa fa-lock"></span><span class="hide-title">{{'acl_document_list'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/please"><span class="fa fa-chain-broken"></span><span class="hide-title">{{'need_document'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/long_page"><span class="fa fa-file-text-o"></span><span class="hide-title">{{'long_page'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/short_page"><span class="fa fa-file-o"></span><span class="hide-title">{{'short_page'|load_lang}}</span></a>
-                            <a class="dropdown-item" href="/old_page"><span class="fa fa-pause"></span><span class="hide-title">{{'old_page'|load_lang}}</span></a>
+                            <a class="dropdown-item" href="/list/document/old"><span class="fa fa-pause"></span><span class="hide-title">{{'old_page'|load_lang}}</span></a>
+                            <a class="dropdown-item" href="/image_file_list"><span class="fa fa-file-image-o"></span><span class="hide-title">{{'image_file_list'|load_lang}}</span></a>
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="/block_log"><span class="fa fa-low-vision"></span><span class="hide-title">{{'recent_ban'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/user_log"><span class="fa fa-users"></span><span class="hide-title">{{'member_list'|load_lang}}</span></a>
-                            <a class="dropdown-item" href="/image_file_list"><span class="fa fa-file-image-o"></span><span class="hide-title">{{'image_file_list'|load_lang}}</span></a>
+                            <a class="dropdown-item" href="/admin_list"><span class="fa fa-user-secret"></span><span class="hide-title">{{'admin_list'|load_lang}}</span></a>
+                            <a class="dropdown-item" href="/list/admin/auth_use"><span class="fa fa-outdent"></span><span class="hide-title">{{'authority_use_list'|load_lang}}</span></a>
                         </div>
                     </li>
-                    {% if imp[2][9] != '0' %}
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle dropdown-toggle-fix" href="#" data-toggle="dropdown" aria-expanded="false">
-                                <span class="fa fa-sliders"></span><span class="hide-title">{{'admin_tool'|load_lang}}</span>
-                            </a>
-                            <div class="dropdown-menu" role="menu">
-                                <a class="dropdown-item" href="/manager"><span class="fa fa-sliders"></span><span class="hide-title">{{'admin_tool'|load_lang}}</span></a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="/manager/3"><span class="hide-title">{{'check_user'|load_lang}}</span></a>
-                                <a class="dropdown-item" href="/auth/give/ban"><span class="hide-title">{{'ban'|load_lang}}</span></a>
-                                <a class="dropdown-item" href="/manager/5"><span class="hide-title">{{'authorize'|load_lang}}</span></a>
-                            </div>
-                        </li>
-                    {% endif %}
                     {% if imp[1][6] != '' %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle dropdown-toggle-fix" href="#" data-toggle="dropdown" aria-expanded="false">
@@ -134,7 +133,7 @@
                                             Member
                                         {% endif %}
                                     {% else %}
-                                        Ip User
+                                        IP User
                                     {% endif %}
                                 </div>
                             </div>

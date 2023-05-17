@@ -128,20 +128,23 @@ jQuery(document).ready(function(jQuery) {
 	recentIntervalCheck();
 });
 
-/* 드롭다운 페이드인 */
-jQuery('.dropdown').on('show.bs.dropdown', function(e) {
-    jQuery(this).find('.dropdown-menu').first().stop(true, true).fadeToggle(200);
-});
+$( function () {
+	'use strict';
+	/* Dropdown fade in */
+	$( '.dropdown' ).on( 'show.bs.dropdown', function () {
+		$( this ).find( '.dropdown-menu' ).first().stop( true, true ).fadeToggle( 200 );
+	} );
 
-jQuery('.dropdown').on('hide.bs.dropdown', function(e) {
-    jQuery(this).find('.dropdown-menu').first().stop(true, true).fadeToggle(200);
-});
+	$( '.dropdown' ).on( 'hide.bs.dropdown', function () {
+		$( this ).find( '.dropdown-menu' ).first().stop( true, true ).fadeToggle( 200 );
+	} );
 
-jQuery('.btn-group').on('show.bs.dropdown', function(e) {
-    jQuery(this).find('.dropdown-menu').first().stop(true, true).fadeToggle(200);
-});
+	$( '.btn-group' ).on( 'show.bs.dropdown', function () {
+		$( this ).find( '.dropdown-menu' ).first().stop( true, true ).fadeToggle( 200 );
+	} );
 
-jQuery('.btn-group').on('hide.bs.dropdown', function(e) {
-    jQuery(this).find('.dropdown-menu').first().stop(true, true).fadeToggle(200);
-});
-/* 드롭다운 페이드인 End */
+	$( '.btn-group' ).on( 'hide.bs.dropdown', function () {
+		$( this ).find( '.dropdown-menu' ).first().stop( true, true ).fadeToggle( 200 );
+	} );
+	/* Dropdown fade in End */
+} );

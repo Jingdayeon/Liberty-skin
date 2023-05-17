@@ -38,8 +38,9 @@
 
     .Liberty .content-wrapper .liberty-content {
         margin-right: auto;
-        padding-bottom: 0.5rem;
+        padding-bottom: 1.2rem;
     }
+    /* ♥ */
 
     .Liberty .content-wrapper .liberty-content .liberty-content-header .liberty-notice {
         margin: 0.5rem;
