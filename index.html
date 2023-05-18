@@ -61,7 +61,7 @@
                         <a class="nav-link dropdown-toggle dropdown-toggle-fix" href="#" data-toggle="dropdown" aria-expanded="false">
                             <span class="fa fa-gear"></span><span class="hide-title">{{'tool'|load_lang}}</span>
                         </a>
-                        <div class="dropdown-menu" role="menu">
+                        <div class="dropdown-menu dropdown-menu-right nav-dropdown-menu" role="menu">
                             <a class="dropdown-item" href="/vote"><span class="fa fa-check-square-o"></span><span class="hide-title">{{'vote'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/upload"><span class="fa fa-upload"></span><span class="hide-title">{{'upload'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/other"><span class="fa fa-cogs"></span><span class="hide-title">{{'other_tool'|load_lang}}</span></a>
@@ -71,10 +71,10 @@
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dropdown-toggle-fix" href="#" data-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle dropdown-toggle-fix" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="fa fa-cogs"></span><span class="hide-title">{{'other_tool'|load_lang}}</span>
                         </a>
-                        <div class="dropdown-menu" role="menu">
+                        <div class="dropdown-menu dropdown-menu-right nav-dropdown-menu" role="menu">
                             <a class="dropdown-item" href="/list/document/all"><span class="fa fa-folder-open"></span><span class="hide-title">{{'all_document_list'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/acl_list"><span class="fa fa-lock"></span><span class="hide-title">{{'acl_document_list'|load_lang}}</span></a>
                             <a class="dropdown-item" href="/please"><span class="fa fa-chain-broken"></span><span class="hide-title">{{'need_document'|load_lang}}</span></a>
@@ -94,7 +94,7 @@
                             <a class="nav-link dropdown-toggle dropdown-toggle-fix" href="#" data-toggle="dropdown" aria-expanded="false">
                                 <span class="fa fa-plus-circle"></span><span class="hide-title">{{'added_menu'|load_lang}}</span>
                             </a>
-                            <div class="dropdown-menu" role="menu">
+                            <div class="dropdown-menu dropdown-menu-right nav-dropdown-menu" role="menu">
                                 {% for added_top_menu in imp[1][6] %}
                                     <a class="dropdown-item" href="{{added_top_menu[1]}}">
                                         <span class="fa fa-plus"></span>
